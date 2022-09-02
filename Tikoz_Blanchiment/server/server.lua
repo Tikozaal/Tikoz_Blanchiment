@@ -168,7 +168,7 @@ AddEventHandler("Tikoz:blanchidepotentreprise", function(money)
         if xMoney >= total then
             account.addMoney(total)
             xPlayer.removeAccountMoney('bank', total)
-            TriggerClientEvent('esx:showAdvancedNotification', source, 'Banque Société', "~b~Bahama's", "Vous avez déposé ~g~"..total.." $~s~ dans votre ~b~entreprise", 'CHAR_BANK_FLEECA', 9)
+            TriggerClientEvent('esx:showAdvancedNotification', source, 'Banque Société', "~b~Blanchiment", "Vous avez déposé ~g~"..total.." $~s~ dans votre ~b~entreprise", 'CHAR_BANK_FLEECA', 9)
         else
             TriggerClientEvent('esx:showNotification', source, "<C>~r~Vous n'avez pas assez d'argent !")
         end
@@ -186,9 +186,9 @@ AddEventHandler("Tikoz:blanchiRetraitEntreprise", function(money)
 		if account.money >= total then
 			account.removeMoney(total)
 			xPlayer.addAccountMoney('bank', total)
-			TriggerClientEvent('esx:showAdvancedNotification', source, 'Banque Société', "~b~Bahama's", "Vous avez retiré ~g~"..total.." $~s~ de votre ~b~entreprise", 'CHAR_BANK_FLEECA', 9)
+			TriggerClientEvent('esx:showAdvancedNotification', source, 'Banque Société', "~b~Blanchiment", "Vous avez retiré ~g~"..total.." $~s~ de votre ~b~entreprise", 'CHAR_BANK_FLEECA', 9)
 		else
-			TriggerClientEvent('esx:showAdvancedNotification', source, 'Banque Société', "~b~Bahama's", "Vous avez pas assez d'argent dans votre ~b~entreprise", 'CHAR_BANK_FLEECA', 9)
+			TriggerClientEvent('esx:showAdvancedNotification', source, 'Banque Société', "~b~Blanchiment", "Vous avez pas assez d'argent dans votre ~b~entreprise", 'CHAR_BANK_FLEECA', 9)
 		end
 	end)
 end) 
