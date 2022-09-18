@@ -132,12 +132,8 @@ menujob = {
     }
 }
 
-RegisterCommand("blanchi", function() 
-
+keyRegister("TikozOpenBlanchi", "Menu F7", "F7", function()
     if ESX.PlayerData.job2.name == "blanchi" then
         CreateMenu(menujob)
-    else 
-        ESX.ShowNotification("Cette commande est réservée aux p ~b~~h~blanchisseurs")
     end
-
-end, false)
+end)
